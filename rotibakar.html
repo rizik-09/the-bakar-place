@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Bakar Place</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #ffd700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }header {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.product-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.menu-section {
+  text-align: center;
+  max-width: 350px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.menu-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.menu-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-section li {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+.rotating-image {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  width: 70px;
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 0 16px;
+  margin-bottom: 40px;
+}
+
+.gallery-item {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.stars {
+  margin-top: 5px;
+}
+
+.stars span {
+  color: gold;
+  font-size: 18px;
+}
+
+.order-section {
+  margin-bottom: 60px;
+}
+
+.order-section a {
+  background-color: #ffd700;
+  color: #111;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+footer {
+  padding: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #777;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Bakar Place</h1>
+  </header>  <img src="/mnt/data/file-Qp119xPx9SCsM7rFQq5T3n" alt="Roti Bakar" class="product-image" />  <section class="menu-section">
+    <h2>Menu</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/1904/1904425.png" class="rotating-image" alt="roti-icon" />
+    <ul>
+      <li>Coklat - Rp 2.500</li>
+      <li>Coklat Keju - Rp 3.000</li>
+      <li>Stroberi - Rp 2.500</li>
+      <li>Blueberry - Rp 2.500</li>
+      <li>Oreo - Rp 2.500</li>
+    </ul>
+  </section>  <section class="gallery">
+    <div class="gallery-item">
+      <img src="https://img-global.cpcdn.com/recipes/e807401e33ad3049/1200x630cq70/photo.jpg" alt="Roti Bakar 1">
+      <div class="stars">★★★★★</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://resepkoki.id/wp-content/uploads/2023/08/Roti-Bakar-Keju-Coklat.jpg" alt="Roti Bakar 2">
+      <div class="stars">★★★★☆</div>
+    </div>
+  </section>  <section class="order-section">
+    <a href="https://wa.me/6287881558717" target="_blank">Pesan Sekarang</a>
+  </section>  <footer>
+    &copy; 2025 The Bakar Place
+  </footer>
+</body>
+</html>
